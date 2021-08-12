@@ -1,0 +1,123 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.back {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff1f1), to(#e8c5c3));
+  background-image: linear-gradient(to bottom, #fff1f1, #e8c5c3);
+}
+
+header {
+  background-color: #fff1f1;
+}
+
+.grid {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-text-decoration: #6f7c74;
+          text-decoration: #6f7c74;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (300px)[2];
+        grid-template-columns: repeat(2, 300px);
+  }
+  #LOGO1 {
+    height: 40.72px;
+  }
+  .elaboracion {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (50%)[2];
+        grid-template-columns: repeat(2, 50%);
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (300px)[1];
+        grid-template-columns: repeat(1, 300px);
+    -ms-grid-rows: (400px)[1];
+        grid-template-rows: repeat(1, 400px);
+  }
+  #LOGO1 {
+    height: 28px;
+  }
+  .elaboracion {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (100%)[1];
+        grid-template-columns: repeat(1, 100%);
+  }
+}
+
+h1 {
+  font-family: 'Courier Prime', monospace;
+  font-family: 'Sriracha', cursive;
+  color: #6f7c74;
+  text-align: center;
+}
+
+.comoComprar {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  color: #6f7c74;
+}
+
+.comoComprar li {
+  padding: 10px;
+}
+
+.elaboracion section {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.elaboracion section p {
+  color: #6f7c74;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  padding: 5px;
+}
+
+article p {
+  text-align: start;
+  color: #6f7c74;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  padding: 5px;
+}
+
+article li {
+  color: #6f7c74;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+}
+
+Footer {
+  background-color: #e8c5c3;
+  font-size: 1rem;
+  -webkit-text-decoration: #6f7c74;
+          text-decoration: #6f7c74;
+}
+/*# sourceMappingURL=Styles.css.map */

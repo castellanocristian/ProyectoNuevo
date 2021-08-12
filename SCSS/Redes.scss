@@ -1,0 +1,31 @@
+.redes {
+    width: 45px;
+    height: 50px;
+    color: #ffff;
+    font-size: 4rem;
+    position: fixed;
+    .redes__wsp {
+        background-color: #128c7e;
+        bottom: 110px;
+        right: 0px;
+        border-top-left-radius: 15px;
+    }
+    .redes__fbk {
+        background-color: #1877f2;
+        bottom: 60px;
+        right: 0px;
+    
+    }
+    .redes__ig {
+        background-color: #e1306c;
+        bottom: 10px;
+        right: 0px;
+        border-bottom-left-radius: 15px;
+    
+    }
+}
+
+
+
+
+

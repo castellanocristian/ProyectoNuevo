@@ -1,0 +1,240 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    background: rgb(255, 241, 241)
+}
+
+/* Header */
+
+
+.back {
+    background-image: linear-gradient(to bottom, rgb(255, 241, 241), #e9c5c3);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 100px;
+    padding-bottom: 50px;
+    justify-content: center;
+    text-decoration: #6f7c74;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+        gap: 50px;
+        margin: 0px;
+        padding-bottom: 50px;
+        justify-content: center;
+        text-decoration: #6f7c74;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+    }
+    .nav {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows: repeat(1, 400px);
+        gap: 50px;
+        margin: 0px;
+        padding-bottom: 50px;
+        justify-content: center;
+        text-decoration: #6f7c74;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+    }
+    .nav {
+        font-size: 0.5rem;
+    }
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 1rem;
+    text-decoration: #6f7c74;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+
+header {
+    color: #5b5854;
+
+}
+
+.container {
+    font-size: 1rem;
+
+}
+#logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo-container>img {
+    max-width: 10%;
+}
+
+/* Main */
+
+main {
+    box-sizing: border-box;
+}
+
+.videoindex {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+h1 {
+    color: #6f7c74;
+    font-family: 'Courier Prime', monospace;
+    font-family: 'Sriracha', cursive;;
+    text-align: center;
+}
+
+h2 {
+    color: #6f7c74;
+    font-family: 'Courier Prime', monospace;
+    font-family: 'Sriracha', cursive;
+    text-align: center;
+}
+
+section {
+    display: inline-block;
+    padding: 20px;
+}
+
+
+p{
+    color: #6f7c74;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    padding: 5px;
+}
+
+.comoComprar {
+    display: flex;
+    flex-direction: column;
+    color: #6f7c74;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    
+    
+}
+.li {
+    margin-left: 20px;
+}
+.contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+ul { 
+    list-style-type: none;
+    overflow: hidden;
+    float: right;
+}
+
+li {
+    font-family: 'Montserrat', sans-serif;
+    float: left;
+    padding: 5px;
+    font-size: 2rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-size: 2rem;
+    color: brown;
+}
+
+.elaboracion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* Footer */
+
+footer{
+    background: #e9c5c3;
+    margin: 0px;
+    height: 200px;
+
+}
+
+
+
+
+/* redes sociales */
+
+.wsp {
+    width: 45px;
+    height: 50px;
+    background-color: #128c7e;
+    color: #ffff;
+    font-size: 4rem;
+    position: fixed;
+    bottom: 110px;
+    right: 0px;
+    border-top-left-radius: 15px;
+}
+
+.fbk {
+    width: 45px;
+    height: 50px;
+    background-color: #1877f2;
+    color: #ffff;
+    font-size: 4rem;
+    position: fixed;
+    bottom: 60px;
+    right: 0px;
+}
+
+.ig {
+    width: 45px;
+    height: 50px;
+    background-color: #e1306c;
+    color: #ffff;
+    font-size: 4rem;
+    position: fixed;
+    bottom: 10px;
+    right: 0px;
+    border-bottom-left-radius: 15px;
+}

@@ -1,0 +1,105 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.back {
+    background-image: linear-gradient(to bottom, rgb(255, 241, 241), #e8c5c3);
+}
+
+header {
+    background-color: rgb(255, 241, 241);
+}
+
+.grid {
+    justify-content: center;
+    text-decoration: #6f7c74;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+    }
+    #LOGO1 {
+        height: 40.72px;
+    }
+    .elaboracion {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows: repeat(1, 400px);
+    }
+    #LOGO1 {
+        height: 28px;
+    }
+    .elaboracion {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+    }
+}
+
+h1 {
+    font-family: 'Courier Prime', monospace;
+    font-family: 'Sriracha', cursive;
+    color: #6f7c74;
+    text-align: center;
+}
+
+.comoComprar {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #6f7c74;
+    li {
+        padding: 10px;
+    }
+}
+
+.elaboracion {
+    section { 
+        align-items: center;
+        justify-content: center;
+        p {
+        color: #6f7c74;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5rem;
+        padding: 5px;
+        }
+    }
+}
+
+article {
+    p {
+        text-align: start;
+        color: #6f7c74;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+    li {
+        color: #6f7c74;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5rem;
+    }
+}
+
+Footer {
+    background-color: #e8c5c3;
+    font-size: 1rem;
+    text-decoration: #6f7c74;
+}
+

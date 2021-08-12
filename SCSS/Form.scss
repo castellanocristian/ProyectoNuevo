@@ -1,0 +1,15 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-size: 2rem;
+    color: brown;
+    h1 {
+        font-family: 'Courier Prime', monospace;
+        font-family: 'Sriracha', cursive;
+        color: #6f7c74;
+    }
+}
