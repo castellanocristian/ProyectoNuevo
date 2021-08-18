@@ -4,6 +4,7 @@
   color: #ffff;
   font-size: 4rem;
   position: fixed;
+  z-index: +2;
 }
 
 .redes .redes__wsp {

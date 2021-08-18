@@ -18,7 +18,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&family=Sriracha&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    
+
 
     <!--Iconos-->
     <script src="https://kit.fontawesome.com/5e9ba45776.js" crossorigin="anonymous"></script>
@@ -31,35 +33,33 @@
     <title>MiMate mates pintados a mano</title>
 </head>
 <body>
+    <img src="imagenes/mimate.png" alt="Fondo" class="fondo">
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-2">
-                    <img id="LOGO1" src="imagenes/LOGO2.jpeg" width="100%" height="100%">
-                </div>
-                <div class="col-10">
+                <div>
                     <nav class="navbar navbar-expand-lg navbar-light bg-rgb(255, 241, 241)">
                         <div class="container-fluid">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <a class="navbar-brand" href="Index.html">MiMate</a>
+                        <a class="navbar-brand" href="index.html" ><img id="LOGO1" src="imagenes/logon.jpg" width="200px"></a>
                         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="Index.html">Inicio</a>
+                                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="Productos.html">Productos</a>
+                                    <a class="nav-link" href="productos.html">Productos</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="Elaboracion.html">Elaboracion</a>
+                                    <a class="nav-link" href="como comprar.html">Como Comprar</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="Como comprar.html">Como Comprar</a>
+                                    <a class="nav-link" href="elaboracion.html">Nosotros</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="Contacto.html">Contacto</a>
+                                    <a class="nav-link" href="contacto.html">Contacto</a>
                                 </li>
                             </ul>
                             <form class="d-flex">
@@ -75,51 +75,61 @@
         
         
     </header>
-
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-            <img src="Imagenes/frida1280x720.jpeg" class="d-block w-80" alt="..." width="100%">
-            </div>
-            <div class="carousel-item">
-            <img src="Imagenes/dafe.jpeg" class="d-block w-80" alt="..." width="100%">
-            </div>
-            <div class="carousel-item">
-            <img src="Imagenes/botellas.png" class="d-block w-80" alt="..." width="100%">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+    
     <main  class="back">
-        <section class="videoindex">
-            <video controls autoplay muted loop>
-                <source src="videos/arbol.mp4" type="video/mp4">
-                tu navegador no implementa el elemento <code>video</code>
-            </video>
-        </section>
-        <h2>Como preparar un buen mate</h2>
-        <section class="videoindex">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ejSS5s7iO40" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </section>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="Imagenes/2.png" class="d-block w-80" alt="..." width="100%">
+            </div>
+            <div class="carousel-item">
+            <img src="Imagenes/3.png" class="d-block w-80" alt="..." width="100%">
+            </div>
+            <div class="carousel-item">
+            <img src="Imagenes/4.png" class="d-block w-80" alt="..." width="100%">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
         <h1>Destacados</h1>
-        <section class="videoindex">
-            <img src="imagenes/fridaext.jpeg" alt="" width="30%">
-            <img src="imagenes/floresext.jpeg" alt="" width="30%">
+        <section class="destacados row">
+            <div class="col-6">
+                <a class="navbar-brand" href="Productos.html">
+                    <img src="imagenes/fridaext.jpeg" alt="" width="100%" class="imagenDestacada">
+                    <div class="texto">PRODUCTOS</div></a>
+                </a>
+            </div>
+            <div class="col-6">
+                <a class="navbar-brand" href="Como comprar.html">
+                    <img src="imagenes/floresext.jpeg" alt="" width="100%" class="imagenDestacada">
+                    <div class="texto1">COMO COMPRAR</div>
+                </a>
+            </div>
         </section>
+        <div class="lema">#MiMate</div>
+        <div class="lema">Compartí tus diseños con nosotros</div>
+
+        <h2>Como preparar un buen mate</h2>
         <section class="row">
-            <article class="col-5">
+            <div class="video col">
+                <iframe src="https://www.youtube.com/embed/ejSS5s7iO40" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            </section>
+
+        <section class="row">
+            <article class="col-6">
             <h1>Los secretos para curar un mate de madera</h1>
             <h2>Todas las maderas tienen resinas que aparecen en algún momento mientras tomamos unos mates, y le dan un toque amargo, por eso es necesario curarlos.</h2>
             <p>
@@ -132,30 +142,18 @@
                     <li>Lavar con agua tibia para sacar los restos de yerba y ya podemos disfrutar de unos mates.</li>
                 </ol>
             </p>
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                    <img src="Imagenes/madera.jpg" class="d-block w-80" alt="..." height="200px">
-                    </div>
-                    <div class="carousel-item">
-                    <img src="Imagenes/como-pintar-con-pintura-acrilica-650x433.jpg" class="d-block w-80" alt="..." height="200px">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/IJ0USzjKbFc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
+            
+            <h2>Consejos para cuidar un mate de madera</h2>
+            <ol>
+                <li>Evitar golpear el mate cuando lo limpiamos: especialmente los de palo santo, son muy delicados.</li>
+                <li>Sacar la yerba mate con una cucharita, para evitar que se quiebre.</li>
+                <li>La madera debe mantenerse lo más seca posible, una vez que fue curado nuestro mate y cuando terminamos de tomar, hay que secalo bien con un repasador limpio o con papel de cocina.</li>
+            </ol>
             </article>
-            <article class="col-5">
+            <article class="col-6">
             <h1>Como pintar con pintura acrilica</h1>
             <p>
                 Si quieres empezar a pintar con este material no dejes de prestar atención, puesto que vamos a explicarte todo lo que hay que saber sobre cómo pintar con acrílico.
@@ -169,24 +167,32 @@
             </article>
         </section>
     </main>
-    <footer>
-        <ul class="nav flex-column">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="Index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Productos.html">Productos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Elaboracion.html">Elaboracion</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Como comprar.html">Como Comprar</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Contacto.html">Contacto</a>
-            </li>
-        </ul>
+    <footer class="row">
+        <div class= "container col-6">
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="productos.html">Productos</a>
+                </li>
+                <li>
+                    <a href="elaboracion.html">Elaboracion</a>
+                </li>
+                <li>
+                    <a href="eomo comprar.html">Como Comprar</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-6">
+            <h3>Contacto</h3>
+            <h4>Camino Gral. Belgrano 6800</h4>
+            <h4>+54 221 5408700</h4>
+            <h4>mimate@gmail.com</h4>
+        </div>
 
         <div class="redes">
             <a href="#" class="redes redes__wsp">

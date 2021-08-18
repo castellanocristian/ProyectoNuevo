@@ -10,13 +10,8 @@ html {
   font-size: 62.5%;
 }
 
-.back {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff1f1), to(#e8c5c3));
-  background-image: linear-gradient(to bottom, #fff1f1, #e8c5c3);
-}
-
 header {
-  background-color: #fff1f1;
+  background-color: #fff1da;
 }
 
 .grid {
@@ -25,8 +20,8 @@ header {
           justify-content: center;
   -webkit-text-decoration: #6f7c74;
           text-decoration: #6f7c74;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
+  font-family: 'Lora', serif;
+  font-size: 3rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -36,8 +31,12 @@ header {
     -ms-grid-columns: (300px)[2];
         grid-template-columns: repeat(2, 300px);
   }
+  .fondo {
+    width: 100%;
+  }
   #LOGO1 {
     height: 40.72px;
+    width: 120px;
   }
   .elaboracion {
     display: -ms-grid;
@@ -56,8 +55,12 @@ header {
     -ms-grid-rows: (400px)[1];
         grid-template-rows: repeat(1, 400px);
   }
+  .fondo {
+    width: 100%;
+  }
   #LOGO1 {
     height: 28px;
+    width: 80px;
   }
   .elaboracion {
     display: -ms-grid;
@@ -68,20 +71,86 @@ header {
 }
 
 h1 {
-  font-family: 'Courier Prime', monospace;
-  font-family: 'Sriracha', cursive;
-  color: #6f7c74;
+  font-family: 'Lora', serif;
   text-align: center;
+  color: #f9827f;
+}
+
+h2 {
+  font-family: 'Lora', serif;
+  text-align: center;
+  color: #f9827f;
+}
+
+.lema {
+  font-family: 'Lora', serif;
+  font-size: 5rem;
+  text-align: center;
+  -webkit-text-stroke: 2px black;
+}
+
+.imagenes {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.imagenes:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+.destacados {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.destacados .imagenDestacada {
+  opacity: 1;
+  display: block;
+  height: auto;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  padding: 20px;
+}
+
+.destacados .imagenDestacada:hover {
+  opacity: 0.8;
+}
+
+.destacados .texto {
+  color: white;
+  position: absolute;
+  font-family: 'Lora', serif;
+  font-size: 6rem;
+  top: 50%;
+  left: 25%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.destacados .texto1 {
+  color: white;
+  position: absolute;
+  font-family: 'Lora', serif;
+  font-size: 6rem;
+  top: 50%;
+  left: 75%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .comoComprar {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lora', serif;
   font-size: 1.5rem;
-  color: #6f7c74;
+  color: black;
 }
 
 .comoComprar li {
   padding: 10px;
+  margin-left: 50px;
 }
 
 .elaboracion section {
@@ -95,27 +164,44 @@ h1 {
 
 .elaboracion section p {
   color: #6f7c74;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lora', serif;
   font-size: 1.5rem;
   padding: 5px;
 }
 
+.video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 20px;
+}
+
+article {
+  background-color: #fff1da;
+}
+
 article p {
   text-align: start;
-  color: #6f7c74;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lora', serif;
   font-size: 1.5rem;
   padding: 5px;
 }
 
 article li {
-  color: #6f7c74;
-  font-family: 'Montserrat', sans-serif;
+  color: black;
+  font-family: 'Lora', serif;
   font-size: 1.5rem;
 }
 
+article h2 {
+  color: black;
+}
+
 Footer {
-  background-color: #e8c5c3;
+  background-color: #9b8884;
   font-size: 1rem;
   -webkit-text-decoration: #6f7c74;
           text-decoration: #6f7c74;
