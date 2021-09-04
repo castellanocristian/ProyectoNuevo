@@ -13,48 +13,82 @@ html{
 header {
     background-color: #fff1da;
 }
+.fondo {
+    width: 100%;
+}
 
 .grid {
-    justify-content: center;
     text-decoration: #6f7c74;
     font-family: 'Lora', serif;
     font-size: 3rem;
+    div {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+    }
 }
 
+$container-max-widths: (
+    sm: 375px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1320px
+);
+
+
 @media only screen and (max-width: 768px) {
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(2, 300px);
+    .col-3 {
+        width: 50%;
+        p {
+            font-size: 3rem;
+        }
+    }
+    .col-2 {
+        width: 50%;
+        p {
+            font-size: 3rem;
+        }
     }
     .fondo {
         width: 100%;
+        display: none;
     }
     #LOGO1 {
         height: 40.72px;
         width: 120px;
     }
-    .elaboracion {
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
+    .imagenes {
+        filter: none;
     }
+
 }
 
 @media only screen and (max-width: 375px) {
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(1, 300px);
-        grid-template-rows: repeat(1, 400px);
+    .col-3 {
+        width: 100%;
+        p {
+            font-size: 2rem;
+        }
+    }
+    .col-2 {
+        width: 100%;
+        p {
+            font-size: 2rem;
+        }
     }
     .fondo {
         width: 100%;
+        display: none;
     }
     #LOGO1 {
         height: 28px;
         width: 80px;
     }
-    .elaboracion {
-        display: grid;
-        grid-template-columns: repeat(1, 100%);
+    .imagenes {
+        filter: none;
     }
 
 }
@@ -81,7 +115,6 @@ h2 {
 
 .imagenes {
     filter: grayscale(100%);
-
 }
 
 .imagenes:hover {
@@ -107,7 +140,7 @@ h2 {
         color: white;
         position: absolute;
         font-family: 'Lora', serif;
-        font-size: 6rem;
+        font-size: 6vw;
         top: 50%;
         left: 25%;
         transform: translate(-50%, -50%);
@@ -116,14 +149,19 @@ h2 {
         color: white;
         position: absolute;
         font-family: 'Lora', serif;
-        font-size: 6rem;
+        font-size: 6vw;
         top: 50%;
         left: 75%;
         transform: translate(-50%, -50%);
     }
 }
 
-
+.elaboracion {
+    padding: 10px;
+    p {
+        font-size: 1.2rem;
+    }
+}
 
 .comoComprar {
     font-family: 'Lora', serif;
@@ -134,19 +172,11 @@ h2 {
         margin-left: 50px;
     }
 }
+.row {
+    width: 100%;
+} 
 
-.elaboracion {
-    section { 
-        align-items: center;
-        justify-content: center;
-        p {
-        color: #6f7c74;
-        font-family: 'Lora', serif;
-        font-size: 1.5rem;
-        padding: 5px;
-        }
-    }
-}
+
 .video {
     display: flex;
     justify-content: center;
@@ -154,22 +184,41 @@ h2 {
 }
 
 article {
+    border: 2px solid gray;
+    border-radius: 25px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
     background-color: #fff1da;
     p {
         text-align: start;
         font-family: 'Lora', serif;
-        font-size: 1.5rem;
+        font-size: 1.5vw;
         padding: 5px;
     }
     li {
         color: black;
         font-family: 'Lora', serif;
-        font-size: 1.5rem;
+        font-size: 1.5vw;
     }
-    h2 {
-        color: black;
+
+}
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    iframe {
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
     }
 }
+
 
 Footer {
     background-color: #9b8884;

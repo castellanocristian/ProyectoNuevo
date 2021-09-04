@@ -15,11 +15,12 @@ header {
 
 Footer {
     ul {
+        text-align: center;
         font-family: 'Montserrat', sans-serif;
         text-decoration: #6f7c74;
-        font-size: 1.5rem;
+        font-size: 1.5vw;
         list-style: none;
-        padding-left: 50px;
+
         li {
             a {
                 color: black;
